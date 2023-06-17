@@ -8,7 +8,7 @@
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "yarn lint --fix",
     "prettier:fix": "yarn prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint-prettier":"yarn lint:fix && yarn prettier:fix"
+    "lint-prettier": "yarn lint:fix && yarn prettier:fix"
   },
   "author": "",
   "license": "ISC",
