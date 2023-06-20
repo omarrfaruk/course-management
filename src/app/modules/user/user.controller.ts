@@ -3,11 +3,11 @@ import { createUser } from './user.service'
 
 export const createUsers = async (req: Request, res: Response) => {
   try {
-    const data = req.body
-    const user = await createUser(data)
+    const { user } = req.body
+    const result = await createUser(user)
     res.status(200).json({
       success: true,
-      data: user,
+      data: result,
       message: 'success',
     })
   } catch (error) {
