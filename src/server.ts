@@ -1,15 +1,17 @@
 import mongoose from 'mongoose'
 import app from './app'
 import config from './config'
+import { errorLogger, logger } from './logger/logger'
 
 const databaseConnect = async () => {
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/test')
+    await mongoose.connect(config.database_url as string)
     app.listen(config.port, () => {
-      console.log(`Example app listening on port ${config.port}`)
+      logger.info(`Example app listening on port ${config.port}`)
     })
-  } catch (error) {
-    console.log(error)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (err: any) {
+    errorLogger.error(err.message)
   }
 }
 
