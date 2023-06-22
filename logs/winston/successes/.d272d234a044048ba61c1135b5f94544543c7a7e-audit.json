@@ -1,15 +1,15 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
-    },
-    "auditLog": "D:\\backend\\course_management\\logs\\winston\\successes\\.d272d234a044048ba61c1135b5f94544543c7a7e-audit.json",
-    "files": [
-        {
-            "date": 1687329141172,
-            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-21-06-12-success.log",
-            "hash": "ac1d9859408bc14f876f73d98fab99a470acf782f67d2e5a53cc4405021c2b03"
-        }
-    ],
-    "hashType": "sha256"
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "D:\\backend\\course_management\\logs\\winston\\successes\\.d272d234a044048ba61c1135b5f94544543c7a7e-audit.json",
+  "files": [
+    {
+      "date": 1687329141172,
+      "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-21-06-12-success.log",
+      "hash": "ac1d9859408bc14f876f73d98fab99a470acf782f67d2e5a53cc4405021c2b03"
+    }
+  ],
+  "hashType": "sha256"
 }
