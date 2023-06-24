@@ -1,15 +1,25 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "D:\\backend\\course_management\\logs\\winston\\errors\\.1b31df742e69827a92746e134f92da993fefdb39-audit.json",
-  "files": [
-    {
-      "date": 1687329141178,
-      "name": "D:\\backend\\course_management\\logs\\winston\\errors\\phu-2023-21-06-12-error.log",
-      "hash": "396550e8ebb2dfa6f43e3a5c848af83aa96fc8e5be3484025aa8abd61ae929b8"
-    }
-  ],
-  "hashType": "sha256"
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\backend\\course_management\\logs\\winston\\errors\\.1b31df742e69827a92746e134f92da993fefdb39-audit.json",
+    "files": [
+        {
+            "date": 1687329141178,
+            "name": "D:\\backend\\course_management\\logs\\winston\\errors\\phu-2023-21-06-12-error.log",
+            "hash": "396550e8ebb2dfa6f43e3a5c848af83aa96fc8e5be3484025aa8abd61ae929b8"
+        },
+        {
+            "date": 1687625847667,
+            "name": "D:\\backend\\course_management\\logs\\winston\\errors\\phu-2023-24-06-22-error.log",
+            "hash": "5d23960f71a6603c38237f44425725fdd895e262d89a0d5669a241c3bd196c09"
+        },
+        {
+            "date": 1687626252826,
+            "name": "D:\\backend\\course_management\\logs\\winston\\errors\\phu-2023-24-06-23-error.log",
+            "hash": "0dc95aded1c160c2204b4293202884c6e4972c50eb7cca0f5b71c747389348f9"
+        }
+    ],
+    "hashType": "sha256"
 }
