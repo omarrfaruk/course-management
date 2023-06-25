@@ -1,10 +1,10 @@
-import IUser from './user.interface'
 import User from './user.model'
 import config from '../../../config'
 import { generatedId } from './user.utils'
 import ApiError from '../../../errors/ApiError'
+import { IUser } from './user.interface'
 
-export const createUser = async (user: IUser): Promise<IUser | null> => {
+const createUser = async (user: IUser): Promise<IUser | null> => {
   //auto generated id
   const id = await generatedId()
   user.id = id
@@ -19,4 +19,8 @@ export const createUser = async (user: IUser): Promise<IUser | null> => {
     throw new ApiError(400, 'failed to create user')
   }
   return createdUser
+}
+
+export const userService = {
+  createUser,
 }

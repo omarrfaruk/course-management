@@ -3,13 +3,20 @@ import { IgenericErrorMessages } from '../../interfaces/error'
 import config from '../../config'
 import handleValidationError from '../../errors/handleValidationError'
 import ApiError from '../../errors/ApiError'
+import { errorLogger } from '../../logger/logger'
 
+// eslint-disable-next-line no-unused-vars
 const globarErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
+  // eslint-disable-next-line no-unused-expressions
+  config.env === 'development'
+    ? console.log(`🐱‍🏍 globalErrorHandler ~~`, { error })
+    : errorLogger.error(`🐱‍🏍 globalErrorHandler ~~`, error)
+
   let statusCode = 500
   let message = 'something went wrong'
   let errorMessages: IgenericErrorMessages[] = []
 
-  if (error.message === 'ValidatorError') {
+  if (error?.name === 'ValidationError') {
     const simplifiedError = handleValidationError(error)
     statusCode = simplifiedError?.statusCode
     message = simplifiedError?.message
@@ -43,7 +50,6 @@ const globarErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   })
-  next()
 }
 
 export default globarErrorHandler
