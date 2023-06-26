@@ -1,0 +1,39 @@
+Mon Jun 26 2023 23:21:13 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ User validation failed: role: Path `role` is required.
+Mon Jun 26 2023 23:23:3 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ User validation failed: role: Path `role` is required.
+Mon Jun 26 2023 23:25:52 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+Mon Jun 26 2023 23:26:53 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+Mon Jun 26 2023 23:28:57 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+Mon Jun 26 2023 23:29:47 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ User validation failed: role: Path `role` is required.
