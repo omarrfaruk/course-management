@@ -4,7 +4,8 @@ import config from '../../config'
 import handleValidationError from '../../errors/handleValidationError'
 import ApiError from '../../errors/ApiError'
 import { errorLogger } from '../../logger/logger'
-// import handleZodValidationError from '../../errors/handleZodValidationError'
+import { ZodError } from 'zod'
+import handleZodValidationError from '../../errors/handleZodValidationError'
 
 // eslint-disable-next-line no-unused-vars
 const globarErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
@@ -22,14 +23,12 @@ const globarErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     statusCode = simplifiedError?.statusCode
     message = simplifiedError?.message
     errorMessages = simplifiedError?.errorMessages
-  }
-  //  else if (error?.name === 'ZodError ') {
-  //   const simplifiedError = handleZodValidationError(error)
-  //   statusCode = simplifiedError?.statusCode
-  //   message = simplifiedError?.message
-  //   errorMessages = simplifiedError?.errorMessages
-  // }
-  else if (error instanceof Error) {
+  } else if (error instanceof ZodError) {
+    const simplifiedError = handleZodValidationError(error)
+    statusCode = simplifiedError?.statusCode
+    message = simplifiedError?.message
+    errorMessages = simplifiedError?.errorMessages
+  } else if (error instanceof Error) {
     message = error?.message
     errorMessages = error?.message
       ? [
