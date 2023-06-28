@@ -1,7 +1,7 @@
 import express from 'express'
 import { userController } from './user.controller'
 import { userZodSchema } from './user.validation'
-import validateUser from '../../middlewares/validateUser'
+import validateUser from '../../middlewares/validateRequest'
 
 const router = express.Router()
 
