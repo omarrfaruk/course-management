@@ -14,7 +14,7 @@ const createAcademicSemesterZodSchema = z.object({
     startMonth: z.string({
       required_error: 'Start month is required',
     }),
-    year: z.string({
+    year: z.number({
       required_error: 'Year is required',
     }),
   }),
