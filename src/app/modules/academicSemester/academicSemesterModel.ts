@@ -1,14 +1,14 @@
-import { Schema, model } from 'mongoose'
+import { Schema, model } from 'mongoose';
 import {
   IAcademicSemester,
   IAcademicSemesterModel,
-} from './academicSemisterInterface'
+} from './academicSemisterInterface';
 import {
   academicSemesterCode,
   academicSemesterMonth,
   academicSemesterTitle,
-} from './academicSemesterConstant'
-import ApiError from '../../../errors/ApiError'
+} from './academicSemesterConstant';
+import ApiError from '../../../errors/ApiError';
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
@@ -38,22 +38,22 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
     },
   },
   { timestamps: true }
-)
+);
 
 //this is for checking same year same code regestration
 academicSemesterSchema.pre('save', async function (next) {
   const isExist = await academicSemesterUser.findOne({
     title: this.title,
-    code: this.code,
-  })
+    year: this.year,
+  });
   if (isExist) {
-    throw new ApiError(409, 'Academic semester is already exist')
+    throw new ApiError(409, 'Academic semester is already exist');
   }
-  next()
-})
+  next();
+});
 
 const academicSemesterUser = model<IAcademicSemester, IAcademicSemesterModel>(
   'AcademicSemester',
   academicSemesterSchema
-)
-export default academicSemesterUser
+);
+export default academicSemesterUser;

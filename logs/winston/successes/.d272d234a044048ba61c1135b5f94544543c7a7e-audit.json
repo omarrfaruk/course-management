@@ -79,6 +79,16 @@
             "date": 1688124098213,
             "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-30-06-17-success.log",
             "hash": "c5056506527371dfaeef5680c5bf58292d85163a514cf4a2a7490d478855837a"
+        },
+        {
+            "date": 1688139896947,
+            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-30-06-21-success.log",
+            "hash": "f2a0c6b4f9925e5f7a3fdac65dbe368f667b9641f997b33231a5d636464870f0"
+        },
+        {
+            "date": 1688141412927,
+            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-30-06-22-success.log",
+            "hash": "8a9d87e45d42185972a32bc6c83e43bc0bb9551b4281f16f770cb715fe23763e"
         }
     ],
     "hashType": "sha256"
