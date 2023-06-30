@@ -1,6 +1,16 @@
-export const academicSemesterTitle = ['Autumn', 'Summar', 'Fall']
-export const academicSemesterCode = ['01', '02', '03']
-export const academicSemesterMonth = [
+import {
+  IAcademicSemesterCodes,
+  IAcademicSemesterMonths,
+  IAcademicSemesterTitles,
+} from './academicSemisterInterface'
+
+export const academicSemesterTitle: IAcademicSemesterTitles[] = [
+  'Autumn',
+  'Summer',
+  'Fall',
+]
+export const academicSemesterCode: IAcademicSemesterCodes[] = ['01', '02', '03']
+export const academicSemesterMonth: IAcademicSemesterMonths[] = [
   'January',
   'February',
   'March',
