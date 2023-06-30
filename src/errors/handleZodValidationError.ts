@@ -1,6 +1,6 @@
-import { ZodError, ZodIssue } from 'zod'
-import { IgenericErrorMessages } from '../interfaces/error'
-import { IgenericErrorResponse } from '../interfaces/errorResponse'
+import { ZodError, ZodIssue } from 'zod';
+import { IgenericErrorMessages } from '../interfaces/error';
+import { IgenericErrorResponse } from '../interfaces/errorResponse';
 
 const handleZodValidationError = (error: ZodError): IgenericErrorResponse => {
   const errors: IgenericErrorMessages[] = error.issues.map(
@@ -8,16 +8,16 @@ const handleZodValidationError = (error: ZodError): IgenericErrorResponse => {
       return {
         path: issue.path[issue.path.length - 1],
         message: issue.message,
-      }
+      };
     }
-  )
+  );
 
-  const statusCode = 400
+  const statusCode = 400;
   return {
     statusCode,
     message: 'Validation Error',
     errorMessages: errors,
-  }
-}
+  };
+};
 
-export default handleZodValidationError
+export default handleZodValidationError;
