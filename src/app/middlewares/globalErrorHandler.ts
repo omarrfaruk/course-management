@@ -3,7 +3,7 @@ import { IgenericErrorMessages } from '../../interfaces/error'
 import config from '../../config'
 import handleValidationError from '../../errors/handleValidationError'
 import ApiError from '../../errors/ApiError'
-import { errorLogger } from '../../logger/logger'
+import { errorLogger } from '../../shared/logger'
 import { ZodError } from 'zod'
 import handleZodValidationError from '../../errors/handleZodValidationError'
 

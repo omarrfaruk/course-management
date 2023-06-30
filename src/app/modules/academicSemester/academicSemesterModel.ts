@@ -8,6 +8,7 @@ import {
   academicSemesterMonth,
   academicSemesterTitle,
 } from './academicSemesterConstant'
+import ApiError from '../../../errors/ApiError'
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
@@ -38,6 +39,18 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
   },
   { timestamps: true }
 )
+
+//this is for checking same year same code regestration
+academicSemesterSchema.pre('save', async function (next) {
+  const isExist = await academicSemesterUser.findOne({
+    title: this.title,
+    code: this.code,
+  })
+  if (isExist) {
+    throw new ApiError(409, 'Academic semester is already exist')
+  }
+  next()
+})
 
 const academicSemesterUser = model<IAcademicSemester, IAcademicSemesterModel>(
   'AcademicSemester',
