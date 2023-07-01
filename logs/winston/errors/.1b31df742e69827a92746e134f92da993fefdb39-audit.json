@@ -99,6 +99,11 @@
             "date": 1688191202078,
             "name": "D:\\backend\\course_management\\logs\\winston\\errors\\phu-2023-01-07-12-error.log",
             "hash": "f5a3d6e170279a01f86afd499f69fb5bdd65094f7c2a964e7224ccc665064fba"
+        },
+        {
+            "date": 1688228822716,
+            "name": "D:\\backend\\course_management\\logs\\winston\\errors\\phu-2023-01-07-22-error.log",
+            "hash": "540e8f210e479b4d9e33e6c7b7d394e9cdc4b9683f0799f44a881fcba409f482"
         }
     ],
     "hashType": "sha256"

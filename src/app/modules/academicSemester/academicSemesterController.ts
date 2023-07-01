@@ -10,14 +10,13 @@ const createAcademicSemester = catchAsync(
       academicSemester
     );
 
-    next();
-
     sendResponse(res, {
       success: true,
       data: result,
       message: 'success',
       statusCode: 200,
     });
+    next();
   }
 );
 

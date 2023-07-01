@@ -6,13 +6,13 @@ import sendResponse from '../../../shared/sendResponse';
 const createUsers: RequestHandler = catchAsync(async (req, res, next) => {
   const { user } = req.body;
   const result = await userService.createUser(user);
-  next();
   sendResponse(res, {
     success: true,
     data: result,
     message: 'success',
     statusCode: 200,
   });
+  next();
 });
 
 export const userController = {
