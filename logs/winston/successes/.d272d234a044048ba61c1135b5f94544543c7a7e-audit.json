@@ -99,6 +99,11 @@
             "date": 1688191202071,
             "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-01-07-12-success.log",
             "hash": "d8df8be1264a39c524652b4490e06a715b9d190b716262949650367c7e7485ff"
+        },
+        {
+            "date": 1688228822710,
+            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-01-07-22-success.log",
+            "hash": "254cb7b840b108675582e720270b6575ad9bf742085861a848bf122b0b3e1e89"
         }
     ],
     "hashType": "sha256"
