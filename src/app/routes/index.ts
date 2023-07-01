@@ -1,6 +1,6 @@
 import express from 'express';
-import { userRouter } from '../app/modules/user/user.route';
-import { academicSemesterRouter } from '../app/modules/academicSemester/academicSemesterRoute';
+import { userRouter } from '../modules/user/user.route';
+import { academicSemesterRouter } from '../modules/academicSemester/academicSemesterRoute';
 const router = express.Router();
 
 const routerMapper = [
@@ -14,6 +14,6 @@ const routerMapper = [
   },
 ];
 
-routerMapper.map(routes => router.use(routes.path, routes.route));
+routerMapper.forEach(routes => router.use(routes.path, routes.route));
 
 export default router;
