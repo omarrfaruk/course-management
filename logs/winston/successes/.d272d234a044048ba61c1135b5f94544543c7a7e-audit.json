@@ -119,6 +119,26 @@
             "date": 1688403454541,
             "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-03-07-22-success.log",
             "hash": "5af979cd9497e86481117de052c0f21c4d3ddf2ab794fc3e028340c3b7f5ca80"
+        },
+        {
+            "date": 1688446252082,
+            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-04-07-10-success.log",
+            "hash": "580b8e8490c4f32b1bb45f70d89e0dac938e02bce666529f521f9dcaa9d9a16f"
+        },
+        {
+            "date": 1688451354449,
+            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-04-07-12-success.log",
+            "hash": "ceabcc0f214a185a7076e7fef47ab2d7fbb5b81524306bff3255cf8e2d2655a2"
+        },
+        {
+            "date": 1688454078622,
+            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-04-07-13-success.log",
+            "hash": "8c039380da76752f8b58a180d3d38b97e26b4d50c3cd73e0afe035e2a7c7a850"
+        },
+        {
+            "date": 1688489847203,
+            "name": "D:\\backend\\course_management\\logs\\winston\\successes\\CM-2023-04-07-22-success.log",
+            "hash": "742cc607df07fff9b9aaf5aa8df5ae976f1c739972640423f91ed1a1ebee1a06"
         }
     ],
     "hashType": "sha256"
